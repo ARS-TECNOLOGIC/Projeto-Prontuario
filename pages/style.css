@@ -1,0 +1,149 @@
+@import "cores.css";
+
+* {
+    margin: 0;
+    font-family: Arial, 'Helvetica', sans-serif;
+}
+
+body {
+    height: 100%;
+ 
+}
+/*---config side bar-----*/
+#main {
+    width: 100%;
+    min-height:800px;
+    background-color: rgb(233, 233, 233);
+}
+
+.submenu-show {
+    border-left: solid 0px var(--corLightVerde);
+}
+
+.submenu-show li {
+    border-left: solid 5px var(--corMediumVerde);
+    border-bottom: solid 0.2px var(--corMediumVerde);
+
+}
+
+.submenu-hidden {
+    display: none;
+
+}
+
+nav.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    min-height:800px;
+    background-color: rgb(245, 245, 245);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-color:rgba(172, 234, 236, 0.562);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    width: auto;
+    list-style: none;
+    line-height: 50px;
+    padding: 0px 10px;
+    border-left: solid 5px var(--corMediumVerde);
+    border-bottom: solid 0.2px var(--corMediumVerde);
+    background-color:rgba(159, 193, 194, 0.562);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    margin-bottom: 2px;
+}
+
+li.sub {
+    padding-left: 40px;
+    width: auto;
+    transition-duration: 0.5s;
+    border-radius:0px 0px 40px 0px;
+
+}
+nav li.sub a{
+    color:var(--corWhite);
+}
+
+nav li:hover {
+    background-color: var(--corMediumAzul);
+    border-left: solid 5px var(--corWhite);
+    transition-duration: 0.5s;
+    border-radius: 0px;
+}
+
+nav li:hover a {
+    color: var(--corWhite);
+    transition-duration: 0.5s;
+
+}
+
+nav li:hover.sub {
+    border-left: solid 5px var(--corWhite);
+    transition-duration: 0.5s;
+}
+
+nav li:hover.sub a {
+    color: var(--corWhite);
+    transition-duration: 0.5s;
+}
+
+
+nav li a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align-last: center;
+    color: var(--corMediumAzul);
+    text-decoration: none;
+    width: auto;
+    font-weight:540;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+nav li.home {
+    margin-top:50px;
+    margin-bottom: 70px;
+    text-align: center;
+    pointer-events: none;
+    color: var(--corLightVerde);
+    border:none;
+}
+.drop{
+    position: absolute;
+    right: 5px;
+}
+
+nav span.icon img {
+    display: flex;
+    width: 20px;
+    margin: 10px;
+
+}
+
+nav span.icon-top img {
+    width: 150px;
+    margin-top: 0px;
+    filter: drop-shadow(2px 4px 3px var(--corMediumAzul));
+}
+
+
+
+/*-----config main conteudo--------*/
+
