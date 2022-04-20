@@ -1,0 +1,67 @@
+@import "cores.css";
+
+* {
+    margin: 0;
+    font-family: Arial, 'Helvetica', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+/*---config side bar-----*/
+#main {
+    display: flex;
+    width: 100%;
+    min-height:1000px;
+}
+.main-conteudo{
+    width: 100%;
+    padding-left: 0px;
+    background-color: rgb(248, 248, 248);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12px);
+    border-left:solid 3px rgba(159, 193, 194, 0.562);
+}
+
+.header-conteudo{
+    position:sticky;
+    top:0;
+    height: 20px;
+    border-radius: 0 0 0 0px;
+    width: 100%;
+    background-color:var(--corMediumAzul);
+    z-index: 1;
+}
+
+h1.h1-titulo{
+    margin-top: 30px;
+    margin-left:20px;
+    color:var(--corMediumAzul);
+}
+.box-logo{
+    min-height: 500px;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    box-sizing: content-box;  
+}
+
+span.logoPrincipal{
+    line-height: 280px;
+    color:rgb(219, 219, 219);
+    font-family:future;
+    font-size: 20em;
+    width: 100%;
+    text-align: center;
+}
+
+span.tec{
+    font-size: 50px;
+    color:rgb(182, 182, 182);
+    line-height: 20px;
+}

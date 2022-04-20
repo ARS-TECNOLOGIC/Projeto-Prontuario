@@ -1,20 +1,5 @@
 @import "cores.css";
 
-* {
-    margin: 0;
-    font-family: Arial, 'Helvetica', sans-serif;
-}
-
-body {
-    height: 100%;
- 
-}
-/*---config side bar-----*/
-#main {
-    width: 100%;
-    min-height:800px;
-    background-color: rgb(233, 233, 233);
-}
 
 .submenu-show {
     border-left: solid 0px var(--corLightVerde);
@@ -34,20 +19,22 @@ body {
 nav.side-bar {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 230px;
     min-height:800px;
     background-color: rgb(245, 245, 245);
     background-size: 500px;
     background-repeat: no-repeat;
-    padding: 5px;
+    padding: 0px;
+    background-color:rgba(172, 234, 236, 0.329);
 }
 
 nav ul {
+    position: sticky;
+    top:0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 20px;
-    background-color:rgba(172, 234, 236, 0.562);
+    border-radius: 0;
     backdrop-filter:blur(3px);
     -webkit-backdrop-filter: blur(3px);
     padding: 0;
@@ -57,7 +44,7 @@ nav li {
     display: block;
     width: auto;
     list-style: none;
-    line-height: 50px;
+    line-height: 40px;
     padding: 0px 10px;
     border-left: solid 5px var(--corMediumVerde);
     border-bottom: solid 0.2px var(--corMediumVerde);
@@ -65,6 +52,7 @@ nav li {
     backdrop-filter:blur(3px);
     -webkit-backdrop-filter: blur(3px);
     margin-bottom: 2px;
+    box-shadow: 0px 3px 3px 0.8px rgb(85, 169, 172);     
 }
 
 li.sub {
@@ -145,5 +133,4 @@ nav span.icon-top img {
 
 
 
-/*-----config main conteudo--------*/
 

@@ -1,0 +1,111 @@
+@import url("../pages/cores.css");
+
+.boxListPac {
+    display: flex;
+    justify-content: center;
+}
+
+.boxListPac table {
+    border-collapse: collapse;
+    color:#787878;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.boxListPac th {
+    pointer-events: none;
+    background-color: var(--corMediumAzul);
+    color: #fff;
+    padding: 10px;
+    padding-left: 15px;
+}
+td.center{
+    text-align: center;
+}
+th.left{
+    text-align: left;
+}
+
+.boxListPac tr:first-child {
+    /* box-shadow: 0px 20px 8px -10px rgba(89, 131, 130, 0.484); */
+    box-shadow: 0px 8px 5px -5px rgb(0, 55, 60);
+    height: 30px;
+    position: sticky;
+    top: 10px;
+}
+
+.boxListPac tr {
+    height: 50px;
+}
+
+.boxListPac tr:hover {
+    background-color: #e0e0e054;
+    border-bottom:1px solid rgba(143, 143, 143, 0.458);
+}
+
+.boxListPac td {
+    vertical-align: middle;
+    padding: 10px;
+    padding-left: 15px;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.boxListPac div.box-btn {
+    margin-top: 50px;
+    justify-content: right;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+
+td#celAcoes a{
+    align-items: center;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    text-decoration: none;
+    font-size:12px;
+    font-weight: lighter;
+}
+
+td#celAcoes a.azul{
+    color:#fff;
+    background-color: rgb(0, 111, 171);
+}
+td#celAcoes a.azul:hover{
+    color:#fff;
+    background-color:rgb(6, 158, 240);
+    box-shadow: 2px 2px 0px 1px rgb(0, 98, 151);
+    transition-duration: 0.3s;
+}
+td#celAcoes a.verde{
+    color:#fff;
+    background-color: rgb(0, 148, 17);
+}
+td#celAcoes a.verde:hover {
+    background-color:rgb(8, 203, 31);
+    color: #fff;  
+    box-shadow: 2px 2px 0px 1px rgb(0, 132, 15);
+    transition-duration: 0.3s;
+}
+
+td#celAcoes a.vermelho{
+    color:#fff;
+    background-color: rgb(179,0,0);
+}
+td#celAcoes a.vermelho:hover {
+    background-color:rgb(243, 5, 5);
+    color: #fff;  
+    box-shadow: 2px 2px 0px 1px rgb(180, 1, 1);
+    transition-duration: 0.3s;
+    
+}
+
+
